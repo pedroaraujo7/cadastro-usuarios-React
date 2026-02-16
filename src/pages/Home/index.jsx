@@ -1,12 +1,13 @@
 import { Button, Container, ContainerInputs, Form, Input, InputLabel, Title, TopBackground } from './styles'
 
+import UsersImage from '../../assets/users.png'
 
 function App() {
 
   return (
     <Container>
       <TopBackground>
-        <img />
+        <img src={UsersImage} alt='imagem-usuarios'/>
       </TopBackground>
 
 
@@ -25,7 +26,7 @@ function App() {
           </div>
         </ContainerInputs>
 
-          <div>
+          <div style={{width: '100%'}}>
             <InputLabel>E-mail <span>*</span></InputLabel>
             <Input type='email' placeholder='E-mail do usuário' />
           </div>
